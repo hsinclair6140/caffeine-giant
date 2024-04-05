@@ -8,7 +8,7 @@ Welcome to Game Development Process's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Content:
 
 
 
