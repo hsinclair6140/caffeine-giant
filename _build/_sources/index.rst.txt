@@ -11,7 +11,6 @@ Welcome to Game Development Process's documentation!
    :caption: Contents:
 
 
-
 Indices and tables
 ==================
 
