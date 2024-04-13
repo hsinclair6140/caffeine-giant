@@ -8,6 +8,7 @@ permissions:
 
 jobs:
   build_html:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -27,6 +28,7 @@ jobs:
           publish_dir: _build/
           force_orphan: true
   deploy_html:
+    permissions: write-all
     needs: build_html
     environment:
       name: github-pages
