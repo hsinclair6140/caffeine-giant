@@ -45,7 +45,8 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Process</a></li>
 </ul>
@@ -78,17 +79,20 @@
 <h1>Process<a class="headerlink" href="#process" title="Link to this heading"></a></h1>
 <p>Many believe that the game development process includes three major phases: Pre-Production, Production, and Post-Production. (YoYo Games, n.d.) shows the production lifecycle as containing seven, saying only having three phases as a bit of an oversimplification. At Sinclair Games, we follow this seven-stage process.</p>
 <div class="mermaid">
-            sequenceDiagram
-   participant Alice
-   participant Bob
-   Alice-&gt;John: Hello John, how are you?
-   loop Healthcheck
-       John-&gt;John: Fight against hypochondria
-   end
-   Note right of John: Rational thoughts &lt;br/&gt;prevail...
-   John--&gt;Alice: Great!
-   John-&gt;Bob: How about you?
-   Bob--&gt;John: Jolly good!
+            flowchart LR
+        Planning(&quot;Planning&quot;)
+        PreProduction(&quot;Pre-Production&quot;)
+        Production(&quot;Production&quot;)
+        Testing(&quot;Testing&quot;)
+        PreLaunch(&quot;Pre-launch&quot;)
+        Launch(&quot;Launch&quot;)
+        PostLaunch(&quot;Post-launch&quot;)
+        Planning --&gt; PreProduction
+        PreProduction --&gt; Production
+        Production --&gt; Testing
+        Testing --&gt; PreLaunch
+        PreLaunch --&gt; Launch
+        Launch --&gt; PostLaunch
         </div><section id="planning">
 <h2>Planning<a class="headerlink" href="#planning" title="Link to this heading"></a></h2>
 <p>As the very first stage of the development lifecycle, the Planning phase is where the foundation is created. In this phase, we answer all of the critical questions for the game, such as the genre of the game, the artistic styling, story, game engine, mechanics, etc. These are the fundamentals that should be determined before any development takes place, as making changes to these fundamentals after development starts can be very costly.</p>

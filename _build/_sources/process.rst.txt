@@ -5,17 +5,20 @@ Many believe that the game development process includes three major phases: Pre-
 
 .. mermaid::
 
-   sequenceDiagram
-      participant Alice
-      participant Bob
-      Alice->John: Hello John, how are you?
-      loop Healthcheck
-          John->John: Fight against hypochondria
-      end
-      Note right of John: Rational thoughts <br/>prevail...
-      John-->Alice: Great!
-      John->Bob: How about you?
-      Bob-->John: Jolly good!
+    flowchart LR
+            Planning("Planning")
+            PreProduction("Pre-Production")
+            Production("Production")
+            Testing("Testing")
+            PreLaunch("Pre-launch")
+            Launch("Launch")
+            PostLaunch("Post-launch")
+            Planning --> PreProduction
+            PreProduction --> Production
+            Production --> Testing
+            Testing --> PreLaunch
+            PreLaunch --> Launch
+            Launch --> PostLaunch
 
 Planning
 --------
