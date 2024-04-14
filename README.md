@@ -6,7 +6,7 @@ This repository contains Sphinx code that can be edited, built, and published to
 See the [GitHub Pages](https://hsinclair6140.github.io/game-development-process/) for the built results of this documentation. 
 
 ## Building the Docs Through GitHub Actions Automation
-Pushing to this repository on any non-main branch will trigger a GitHub Action that will build and publish the docs to [GitHub Pages](https://hsinclair6140.github.io/game-development-process/).
+Merging any non-main branch into main will trigger a GitHub Action that will build and publish the docs to [GitHub Pages](https://hsinclair6140.github.io/game-development-process/). 'pages' is the branch that will be published and should not be used for any other reason.
 
 ## Building the Docs Locally
 The following section provides instructions on how to build the HTML locally. This step is not necessary, but may be useful for a quick preview of what the built HTML may look like.
