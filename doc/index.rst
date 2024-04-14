@@ -3,13 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Game Development Process's documentation!
-====================================================
+The Game Development Process
+============================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   introduction
+   process
 
 Indices and tables
 ==================
