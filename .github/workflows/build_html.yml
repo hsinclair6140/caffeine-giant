@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - "!main"
+      - "main"
 
 permissions:
   contents: write
@@ -24,10 +24,31 @@ jobs:
           sphinx-build doc _build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.event_name == 'push' && github.ref != 'refs/heads/main' }}
         with:
-          publish_branch: main
+          publish_branch: pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _build/
+          destination_dir: _build/
           force_orphan: true
- 
+  deploy_html:
+    needs: 'build_html'
+    permissions: write-all
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with: 
+          ref: 'pages'
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '_build/.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
