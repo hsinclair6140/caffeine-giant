@@ -1,7 +1,21 @@
 Process
 =======
 
-Many believe that the game development process includes three major phases: Pre-Production, Production, and Post-Production. (YoYo Games, n.d.) shows the production lifecycle as containing seven, saying only having three phases as a bit of an oversimplification. At |Studio|, we follow the seven-stage process. 
+Many believe that the game development process includes three major phases: Pre-Production, Production, and Post-Production. (YoYo Games, n.d.) shows the production lifecycle as containing seven, saying only having three phases as a bit of an oversimplification. At |Studio|, we follow this seven-stage process. 
+
+.. mermaid::
+
+   sequenceDiagram
+      participant Alice
+      participant Bob
+      Alice->John: Hello John, how are you?
+      loop Healthcheck
+          John->John: Fight against hypochondria
+      end
+      Note right of John: Rational thoughts <br/>prevail...
+      John-->Alice: Great!
+      John->Bob: How about you?
+      Bob-->John: Jolly good!
 
 Planning
 --------
