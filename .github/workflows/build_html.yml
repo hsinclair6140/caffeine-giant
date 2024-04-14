@@ -29,9 +29,11 @@ jobs:
         with:
           publish_branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # publish_dir: _build/
+          publish_dir: _build/
+          destination_dir: _build/
           force_orphan: true
   deploy_html:
+    needs: 'build_html'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,7 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
+          path: '_build/.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
