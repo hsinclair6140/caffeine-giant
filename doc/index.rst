@@ -7,6 +7,8 @@ The Game Development Process
 ============================
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
    :titlesonly:
 
    introduction
