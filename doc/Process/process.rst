@@ -134,6 +134,7 @@ In the Post-Launch phase, the project has been deployed and will not be maintain
 
 .. list-table:: Inputs and Outputs
    :header-rows: 1
+   
    * - Inputs
      - Outputs
    * - Project Release
