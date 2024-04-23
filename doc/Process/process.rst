@@ -1,6 +1,8 @@
 The Process
 ===========
 
+A well-defined software development process helps to produce  more reliable code, better aligns to the customer's needs, makes the project easier to manage, and much more. The process of developing a game is no different.
+
 Many believe that the game development process includes three major phases: **Pre-Production**, **Production**, and **Post-Production**. (YoYo Games, n.d.) shows the production lifecycle as actually containing **seven**, saying only having three phases as a bit of an oversimplification. At |Studio|, we follow this seven-stage process. 
 
 .. mermaid::

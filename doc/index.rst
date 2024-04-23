@@ -1,19 +1,24 @@
-Caffeine Giant
+|Studio|
 ==============
 
-This website details the Game Development Process used at |Studio|. A well-defined software development process helps to produce  more reliable code, better aligns to the customer's needs, makes the project easier to manage, and much more. The process of developing a game is no different.
+This website details the process, standards, tutorials, and more used at the |Studio| game studio. 
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    :titlesonly:
 
-   Introduction/introduction
    Process/process
-   HowTo/how-to
-   DevelopmentWorkflow/development_workflow
    Standards/standards
+   DevelopmentWorkflow/development_workflow
    TechnologyStack/technology_stack
+   HowTo/how-to
+
+Relevant Links
+==============
+* `Project Template <https://hsinclair6140.github.io/project-template/>`_
+* `Asset Factory <https://hsinclair6140.github.io/asset-factory/>`_
+* `Unreal Project Bot <https://hsinclair6140.github.io/unreal-project-bot/>`_
 
 Indices and tables
 ==================
