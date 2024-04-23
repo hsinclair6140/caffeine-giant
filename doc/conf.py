@@ -6,8 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Game Development Process'
-copyright = '2024, Heath Sinclair'
+project = 'Caffeine Giant'
+copyright = '2024, Caffeine Giant'
 author = 'Heath Sinclair'
 release = '0.0.1'
 

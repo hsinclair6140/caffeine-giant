@@ -1,9 +1,18 @@
-# game-development-process
-Process Definition for Video Game Development.
+# Caffeine Giant
+Landing Page for Caffeine Giant Games Studio. 
 
-## Overview
+## Links
+* [GitHub Pages](https://hsinclair6140.github.io/caffeine-giant/)
+* [Project Template](https://github.com/hsinclair6140/project-template)
+* [Asset Factory](https://github.com/hsinclair6140/asset-factory)
+* [Unreal Project Bot](https://github.com/hsinclair6140/unreal-project-bot)
+
+## Projects
+[Project 1]()
+
+## Documentation
 This repository contains Sphinx code that can be edited, built, and published to a GitHub Pages website. 
-See the [GitHub Pages](https://hsinclair6140.github.io/game-development-process/) for the built results of this documentation. 
+See the [GitHub Pages](https://hsinclair6140.github.io/caffeine-giant/) for the built results of this documentation. 
 
 ## Building the Docs Through GitHub Actions Automation
 Merging any non-main branch into main will trigger a GitHub Action that will build and publish the docs to [GitHub Pages](https://hsinclair6140.github.io/game-development-process/). 'pages' is the branch that will be published and should not be used for any other reason.
@@ -17,9 +26,11 @@ The following section provides instructions on how to build the HTML locally. Th
 [Python 3.11-64 bit](https://www.python.org/downloads/windows/).
 
 ##### Python Package Dependencies
-The requirements.txt file contains all Python dependencies needed to build the Sphinx documentation locally. Run the following command using the desired Python environment:
+To automatically create a Python virtual environment to build the Sphinx docs, run doc_env_setup.bat.
 
-`pip install -r requirements.txt`
+To manually install the required Python dependencies to an existing Python environment, run the following command:
+
+`pip install -r doc_requirements.txt`
 
 ### Build
 To build the Sphinx code, run the following command in the root of the project:
