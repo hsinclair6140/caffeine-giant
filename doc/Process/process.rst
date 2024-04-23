@@ -42,7 +42,7 @@ In the Planning phase, we will also produce a proof of concept. The proof of con
    * - 
      - Game Development Journal
    * - 
-     - Game Design Document Initial Draft
+     - Design Document Initial Draft
 
 Pre-Production
 --------------
@@ -65,8 +65,8 @@ With all of the roles and responsibilities, it is important to remain flexible d
      - Prototypes
    * - Game Development Journal
      - Updated Game Development Journal
-   * - Game Design Document Initial Draft
-     - Updated Game Design Document
+   * - Design Document Initial Draft
+     - Updated Design Document
 
 Production
 ----------
@@ -81,8 +81,8 @@ During production, some decisions may need to be made in order to keep the proje
      - Outputs
    * - Game Development Journal
      - Updated Game Development Journal
-   * - Game Design Document Initial Draft
-     - Updated Game Design Document
+   * - Design Document Initial Draft
+     - Updated Design Document
 
 Testing
 -------
@@ -126,7 +126,7 @@ In the Launch phase, we can polish the project. This may mean squashing any last
    * - Refined Project Beta Release
      - Project Release
    * - 
-     - Finalized Game Design Document
+     - Finalized Design Document
 
 Post-Launch
 -----------
@@ -148,4 +148,4 @@ References
 
 
 .. Variables
-.. |Studio| replace:: Sinclair Games
+.. |Studio| replace:: Caffeine Giant
