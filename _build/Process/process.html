@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Process &mdash; Caffeine Giant 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Standards" href="../Standards/standards.html" />
+    <link rel="prev" title="Caffeine Giant" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Caffeine Giant
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Standards/standards.html">Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DevelopmentWorkflow/development_workflow.html">Development Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TechnologyStack/technology_stack.html">Technology Stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HowTo/how-to.html">How To</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Caffeine Giant</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">The Process</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Process/process.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-process">
+<h1>The Process<a class="headerlink" href="#the-process" title="Link to this heading"></a></h1>
+<p>A well-defined software development process helps to produce  more reliable code, better aligns to the customer’s needs, makes the project easier to manage, and much more. The process of developing a game is no different.</p>
+<p>Many believe that the game development process includes three major phases: <strong>Pre-Production</strong>, <strong>Production</strong>, and <strong>Post-Production</strong>. (YoYo Games, n.d.) shows the production lifecycle as actually containing <strong>seven</strong>, saying only having three phases as a bit of an oversimplification. At Caffeine Giant, we follow this seven-stage process.</p>
+<div class="mermaid">
+            flowchart LR
+        Planning(&quot;Planning&quot;)
+        PreProd(&quot;Pre-Production&quot;)
+        Prod(&quot;Production&quot;)
+        Testing(&quot;Testing&quot;)
+        PreLaunch(&quot;Pre-launch&quot;)
+        Launch(&quot;Launch&quot;)
+        PostLaunch(&quot;Post-launch&quot;)
+        subgraph &quot;Pre-Production&quot;
+        Planning --&gt; PreProd
+        end
+        PreProd --&gt; Prod
+        subgraph &quot;Production&quot;
+        Prod --&gt; Testing
+        Testing --&gt; PreLaunch
+        PreLaunch --&gt; Launch
+        end
+        subgraph &quot;Post-Production&quot;
+        Launch --&gt; PostLaunch
+        end
+        </div><section id="planning">
+<h2>Planning<a class="headerlink" href="#planning" title="Link to this heading"></a></h2>
+<p>As the very first stage of the development lifecycle, the Planning phase is where the foundation is created. In this phase, we answer all of the critical questions for the game, such as the genre of the game, the artistic styling, story, game engine, mechanics, etc. These are the fundamentals that should be determined before any development takes place, as making changes to these fundamentals after development starts can be very costly.</p>
+<p>In the Planning phase, we will also produce a proof of concept. The proof of concept is useful for understanding the time it will take to develop the project, the cost, the skills needed, and much more. It also gives a chance to demo to the game to interested parties.</p>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p>Proof of Concept</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Game Development Journal</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Design Document Initial Draft</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pre-production">
+<h2>Pre-Production<a class="headerlink" href="#pre-production" title="Link to this heading"></a></h2>
+<p>Now that the project is better understood, the work can be scoped out. Several critical roles exist to ensure that the project stays on track:</p>
+<ul class="simple">
+<li><p><strong>Artist</strong>: Ensures that the game’s theme and genre matches that of what was determined in the Planning phase.</p></li>
+<li><p><strong>Developer</strong>: Determines the mechanics, physics, and other core aspects of how the game will work.</p></li>
+<li><p><strong>Engineer</strong>: Determines the limitations that the project will have, such as the computation limitations if the game will be made for mobile or console.</p></li>
+<li><p><strong>Project Lead</strong>: Keeps the progress of the project moving forward by communicating across all teams, making compromises that ultimately lead to a better project.</p></li>
+<li><p><strong>Writers</strong>: Create the script and story for the project.</p></li>
+</ul>
+<p>With all of the roles and responsibilities, it is important to remain flexible during the Pre-Production phase.</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Proof of Concept</p></td>
+<td><p>Prototypes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Game Development Journal</p></td>
+<td><p>Updated Game Development Journal</p></td>
+</tr>
+<tr class="row-even"><td><p>Design Document Initial Draft</p></td>
+<td><p>Updated Design Document</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="production">
+<h2>Production<a class="headerlink" href="#production" title="Link to this heading"></a></h2>
+<p>In this longest phase of the project’s lifecycle, the majority of the project will be developed. All mechanics will be implemented, levels designed, sounds recorded, and much more. The project comes to life in this phase.</p>
+<p>During production, some decisions may need to be made in order to keep the project on track, both from a timeline perspective and a thematic.</p>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id3" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Game Development Journal</p></td>
+<td><p>Updated Game Development Journal</p></td>
+</tr>
+<tr class="row-odd"><td><p>Design Document Initial Draft</p></td>
+<td><p>Updated Design Document</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h2>
+<p>The testing phase is one of the most important phases of the development lifecycle. Here, we search for bugs and exploits that may have made their way in during development.</p>
+<p>During testing, we also look at the playability and the “funness” of the game. While this is a secondary part of the testing phase, it is worth evaluating the feedback from testers.</p>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id4" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Project Alpha Release</p></td>
+<td><p>Stable Project Beta Release</p></td>
+</tr>
+<tr class="row-odd"><td><p>Test Plan</p></td>
+<td><p>Test Results</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pre-launch">
+<h2>Pre-Launch<a class="headerlink" href="#pre-launch" title="Link to this heading"></a></h2>
+<p>With a stable beta-release, the project can be marketed and presented to the public. Demos can be delivered and feedback solicited. The reception of the project will be unknown, but this is a vital phase of the process, as it is how the world finds out about the game.</p>
+<p>Based on the feedback, changes can still be made to the project to incorporate that feedback and lead to a better, more desired game.</p>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Stable Project Beta Release</p></td>
+<td><p>Refined Project Beta Release</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="launch">
+<h2>Launch<a class="headerlink" href="#launch" title="Link to this heading"></a></h2>
+<p>In the Launch phase, we can polish the project. This may mean squashing any last bugs or refining the visual quality.</p>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id6" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Refined Project Beta Release</p></td>
+<td><p>Project Release</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Finalized Design Document</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="post-launch">
+<h2>Post-Launch<a class="headerlink" href="#post-launch" title="Link to this heading"></a></h2>
+<p>In the Post-Launch phase, the project has been deployed and will not be maintained. Here we can provide bug fixes that may have been missed during development, add content via DLCs, or other patches.</p>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Inputs and Outputs</span><a class="headerlink" href="#id7" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Project Release</p></td>
+<td><p>Project Next Revision</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Project DLC</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>YoYo Games. (n.d.). What are the main stages of game development? | GameMaker. GameMaker. <a class="reference external" href="https://gamemaker.io/en/blog/stages-of-game-development">https://gamemaker.io/en/blog/stages-of-game-development</a></p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Caffeine Giant" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Standards/standards.html" class="btn btn-neutral float-right" title="Standards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Caffeine Giant.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
